@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Divante_Bus>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Divante_Bus>
+    </modules>
+</config>

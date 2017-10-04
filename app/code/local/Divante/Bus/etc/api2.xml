@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<config>
+    <api2>
+        <resource_groups>
+            <divante_bus translate="title" module="Divante_Bus">
+                <title>Divante BUS REST API</title>
+                <sort_order>10</sort_order>
+            </divante_bus>
+        </resource_groups>
+
+        <resources>
+            <divante_bus_product translate="title" module="Divante_Bus">
+                <group>divante_bus</group>
+                <model>divante_bus/api2_product</model>
+                <title>Divante BUS Products</title>
+                <sort_order>10</sort_order>
+                <privileges>
+                    <guest>
+                        <retrieve>1</retrieve>
+                        <create>1</create>
+                        <update>1</update>
+                        <delete>1</delete>
+                    </guest>
+                </privileges>
+
+                <attributes  translate="name description short_description sku price weight website_ids type_id attribute_set_id status visibility tax_class_id multistore attributes metadata" module="Divante_Bus">
+                    <name>Name</name>
+                    <description>Description</description>
+                    <short_description>Short Description</short_description>
+                    <sku>SKU</sku>
+                    <price>Price</price>
+                    <weight>Weight</weight>
+                    <website_ids>Website IDs</website_ids>
+                    <type_id>Type id</type_id>
+                    <attribute_set_id>Attribute Set ID</attribute_set_id>
+                    <status>Status</status>
+                    <visibility>Visibility</visibility>
+                    <tax_class_id>Tax Class ID</tax_class_id>
+                    <multistore>Multistore</multistore>
+                    <attributes>Attributes</attributes>
+                    <metadata>Metadata</metadata>
+                </attributes>
+
+                <routes>
+                    <!-- PUT/PATH/DELETE-->
+                    <route_entity>
+                        <route>/bus/product/:id</route>
+                        <action_type>entity</action_type>
+                    </route_entity>
+
+                    <!-- GET/POST -->
+                    <route_collection>
+                        <route>/bus/products</route>
+                        <action_type>collection</action_type>
+                    </route_collection>
+                </routes>
+
+                <versions>1</versions>
+            </divante_bus_product>
+        </resources>
+    </api2>
+</config>

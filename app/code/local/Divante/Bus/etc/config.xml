@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Divante_Bus>
+            <version>0.1.0.0</version>
+        </Divante_Bus>
+    </modules>
+    <global>
+        <models>
+            <divante_bus>
+                <class>Divante_Bus_Model</class>
+            </divante_bus>
+        </models>
+    </global>
+</config>
